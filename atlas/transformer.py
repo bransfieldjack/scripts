@@ -6,6 +6,13 @@ import pymongo
 from pymongo import MongoClient
 
 
+"""
+A conversion script to extract blood and imac datasets 
+from the postgres atlas database tables and convert to 
+a mongodb database split into two seperat collections, 
+blood & imac.
+"""
+
 def main():
 
 
