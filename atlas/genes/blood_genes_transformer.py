@@ -7,7 +7,7 @@ from pymongo import MongoClient
 
 
 """
-Converts the existing atlas blood samples to a mongo collection.
+Converts the existing atlas blood genes file to a mongo collection.
 """
 
 def main():
