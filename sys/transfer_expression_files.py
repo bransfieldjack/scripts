@@ -31,17 +31,27 @@ def main():
 
     # reT = re.compile(r'.*?count*?.*?.txt*?')
     reT = re.compile(r'count(.+?).txt')
-    
 
-    for tar_filename in glob.glob(r'data/*.tar.gz'):
+    for tar_filename in glob.glob(r'/nfs/HSM/archive/rnaseq/*.tar.gz'):
         try:
             t = tarfile.open(tar_filename, 'r')
         except IOError as e:
             print (e)
         else:
-            print([m for m in t.getmembers() if reT.search(m.name)])
-            s.sendmail("admin@stemformatics.org", "bransfieldjack@gmail.com", email_text)
-            s.quit()
+            #print([m for m in t.getmembers() if reT.search(m.name)])
+            # t.extractall('/mnt/various-srv-backups/expression_19052020/_tar_gz/', members=[m for m in t.getmembers() if reT.search(m.name)])
+            t.extractall('/xinyi', members=[m for m in t.getmembers() if reT.search(m.name)])
+    
+
+    # for tar_filename in glob.glob(r'data/*.tar.gz'):
+    #     try:
+    #         t = tarfile.open(tar_filename, 'r')
+    #     except IOError as e:
+    #         print (e)
+    #     else:
+    #         print([m for m in t.getmembers() if reT.search(m.name)])
+    #         s.sendmail("admin@stemformatics.org", "bransfieldjack@gmail.com", email_text)
+    #         s.quit()
 
             #t.extractall('out', members=[m for m in t.getmembers() if reT.search(m.name)])
 
