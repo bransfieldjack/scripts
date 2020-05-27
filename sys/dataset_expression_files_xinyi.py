@@ -49,4 +49,37 @@ def main():
 if __name__ == "__main__":
     main()
 
+"""
+------------------------------------------------------------------
+OUTPUT:
+------------------------------------------------------------------
+
+[{'dataset_id': 7131, 'data_type': 'microarray'}, 
+{'dataset_id': 6593, 'data_type': 'microarray'}, 
+{'dataset_id': 6300, 'data_type': 'microarray'}, 
+{'dataset_id': 7224, 'data_type': 'RNAseq'}, 
+{'dataset_id': 6659, 'data_type': 'microarray'}, 
+{'dataset_id': 7267, 'data_type': 'RNAseq'}, 
+{'dataset_id': 6080, 'data_type': 'microarray'}, 
+{'dataset_id': 6108, 'data_type': 'microarray'}, 
+{'dataset_id': 5019, 'data_type': 'microarray'}, 
+{'dataset_id': 6146, 'data_type': 'microarray'}, 
+{'dataset_id': 7311, 'data_type': 'RNAseq'}, 
+{'dataset_id': 7291, 'data_type': 'microarray'}, 
+{'dataset_id': 6756, 'data_type': 'microarray'}, 
+{'dataset_id': 6988, 'data_type': 'microarray'}, 
+{'dataset_id': 6637, 'data_type': 'microarray'}, 
+{'dataset_id': 7127, 'data_type': 'RNAseq'}, 
+{'dataset_id': 6310, 'data_type': 'microarray'}, 
+{'dataset_id': 6264, 'data_type': 'microarray'}, 
+{'dataset_id': 6831, 'data_type': 'microarray'}, 
+{'dataset_id': 6291, 'data_type': 'microarray'}, 
+{'dataset_id': 6455, 'data_type': 'microarray'}, 
+{'dataset_id': 6655, 'data_type': 'RNAseq'}, 
+{'dataset_id': 7269, 'data_type': 'microarray'}, 
+{'dataset_id': 6501, 'data_type': 'microarray'}, 
+{'dataset_id': 6658, 'data_type': 'microarray'}, 
+{'dataset_id': 6106, 'data_type': 'microarray'}]
+
+"""
 
