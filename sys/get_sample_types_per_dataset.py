@@ -19,7 +19,7 @@ def main():
     myclient = pymongo.MongoClient(MONGO_URI) 
     database = myclient["dataportal_prod_meta"]
     collection = database["datasets"]
-    mongo_cursor = collection.find({})
+    # mongo_cursor = collection.find({})
 
     connection = psycopg2.connect(user = "portaladmin",
                                   host = "localhost",
@@ -35,7 +35,7 @@ def main():
 
     flat_dataset_ids = [i[0] for i in dataset_ids_row]
     
-
+    test = []
     values = []
     for item in flat_dataset_ids:
 
@@ -50,11 +50,11 @@ def main():
 
         values.append(value_dict)
 
-        for doc in mongo_cursor:
-
-            print(doc['dataset_id'])
-    
-    
+        res = collection.find({'dataset_id': item})
+        for i in res:
+            
+            object_id = i['_id']
+            collection.update({'_id':object_id}, {"$set": {'sample_types': value_dict}}, upsert=False) # or use update one, update deprecated 
 
 
 if __name__ == "__main__":
