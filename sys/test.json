@@ -1,0 +1,92 @@
+[
+    {
+        "toothbrushes": [
+            {
+                "_id": "5ecf8fa1391434053cbf8d5f",
+                "Name": "Colgate toothbrush",
+                "Description": "For brushing your teeth. ",
+                "createdAt": "2020-05-28T10:17:05.681Z",
+                "updatedAt": "2020-05-28T10:17:05.681Z",
+                "__v": 0,
+                "id": "5ecf8fa1391434053cbf8d5f"
+            },
+            {
+                "_id": "5ecf8fb3391434053cbf8d60",
+                "Name": "xyz toothbrush",
+                "Description": "A competing brand.",
+                "createdAt": "2020-05-28T10:17:23.201Z",
+                "updatedAt": "2020-05-28T10:17:23.201Z",
+                "__v": 0,
+                "id": "5ecf8fb3391434053cbf8d60"
+            }
+        ],
+        "_id": "5ecf8ffd391434053cbf8d61",
+        "Name": "Toiletries",
+        "createdAt": "2020-05-28T10:18:37.954Z",
+        "updatedAt": "2020-05-28T10:18:37.957Z",
+        "__v": 0,
+        "pain_killers": [],
+        "retails": [],
+        "id": "5ecf8ffd391434053cbf8d61"
+    },
+    {
+        "toothbrushes": [],
+        "_id": "5ecf9043ed5429054ce8ab50",
+        "Name": "Anti Inflam",
+        "createdAt": "2020-05-28T10:19:47.939Z",
+        "updatedAt": "2020-05-28T10:30:50.907Z",
+        "__v": 0,
+        "pain_killers": [
+            {
+                "categories": [
+                    "5ecf9043ed5429054ce8ab50"
+                ],
+                "_id": "5ecf8287290cd3026ce98dd2",
+                "Name": "Neurofen",
+                "Description": "For anti inflam",
+                "Price": "$1.00",
+                "createdAt": "2020-05-28T09:21:11.233Z",
+                "updatedAt": "2020-05-28T10:30:50.906Z",
+                "__v": 0,
+                "id": "5ecf8287290cd3026ce98dd2"
+            },
+            {
+                "categories": [
+                    "5ecf9043ed5429054ce8ab50"
+                ],
+                "_id": "5ecf9030ed5429054ce8ab4f",
+                "Name": "Paracetamol",
+                "createdAt": "2020-05-28T10:19:28.058Z",
+                "updatedAt": "2020-05-28T10:30:50.906Z",
+                "__v": 0,
+                "id": "5ecf9030ed5429054ce8ab4f"
+            }
+        ],
+        "retails": [],
+        "id": "5ecf9043ed5429054ce8ab50"
+    },
+    {
+        "toothbrushes": [],
+        "_id": "5ecf90a309579e055c15ac3f",
+        "Name": "Retail Items",
+        "createdAt": "2020-05-28T10:21:23.588Z",
+        "updatedAt": "2020-05-28T10:21:52.219Z",
+        "__v": 0,
+        "pain_killers": [],
+        "retails": [
+            {
+                "categories": [
+                    "5ecf90a309579e055c15ac3f"
+                ],
+                "_id": "5ecf90b509579e055c15ac40",
+                "Name": "Kids sweets",
+                "Description": "Nom nom nom",
+                "createdAt": "2020-05-28T10:21:41.544Z",
+                "updatedAt": "2020-05-28T10:21:52.216Z",
+                "__v": 0,
+                "id": "5ecf90b509579e055c15ac40"
+            }
+        ],
+        "id": "5ecf90a309579e055c15ac3f"
+    }
+]
