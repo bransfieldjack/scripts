@@ -54,7 +54,10 @@ def main():
         for i in res:
             
             object_id = i['_id']
-            collection.update({'_id':object_id}, {"$set": {'sample_types': value_dict}}, upsert=False) # or use update one, update deprecated 
+            # collection.update({'_id':object_id}, {'$unset': {"sample_types": None}}, multi=True)
+            collection.update({'_id':object_id}, {"$set": {'sample_types': flat_sample_types}}, upsert=False) # or use update one, update deprecated 
+
+    print("Operation complete. ")
 
 
 if __name__ == "__main__":
