@@ -1,0 +1,76 @@
+<body>
+    <div style="font-family: Arial, Helvetica, sans-serif;">
+      <div
+        style="
+          max-width: 900px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        "
+      >
+        <div
+          style="
+            max-width: 900px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+            margin-bottom: 12px;
+          "
+        >
+          <div id="header" style="padding: 12px; text-align: center;">
+            <img
+              style="vertical-align: middle; height: 45px; margin-bottom: 0.9em;"
+              src="https://thao-nguyen-pharmacy-footscray.s3-ap-southeast-2.amazonaws.com/branding/thao_nguyen_banner_logo.JPG"
+            />
+          </div>
+          <div style="padding: 12px; text-align: center;">
+            <img
+              style="
+                width: 100%;
+                border-top-left-radius: 9pt;
+                border-top-right-radius: 9pt;
+              "
+              src="https://thao-nguyen-pharmacy-footscray.s3-ap-southeast-2.amazonaws.com/images/banners/Screen+Shot+2020-09-03+at+10.55.33+am.png"
+            />
+          </div>
+          <div style="padding: 3em 1.5em 6em 1.5em;">
+            <h1 style="color: #151a22;">Hello,</h1>
+            <h1 style="color: #151a22;">{{email}}</h1>
+            <p style="color: #3a4758; font-size: 1.2em;">
+              Thank you for your order, we will be in contact soon!
+            </p>
+            <h3>Order details:</h3>
+            <p style="color: #3a4758; font-size: 1.2em;">Email: {{email}}</p>
+            <p style="color: #3a4758; font-size: 1.2em;">Address: {{address}}</p>
+            <p style="color: #3a4758; font-size: 1.2em;">City: {{city}}</p>
+            <p style="color: #3a4758; font-size: 1.2em;">Click & Collect: {{clickandcollect}}</p>
+            <p style="color: #3a4758; font-size: 1.2em;">Contact number: {{phone}}</p>
+            <p style="color: #3a4758; font-size: 1.2em;">Items:</p><br>
+            <ul>
+                {{#each items}}
+                    <li>Name: {{name}}</li>
+                    <del><li>Price: {{price}}</li></del>
+                    <li>Promotion Price: {{promotion}}</li>
+                    <li>Quantity: {{quantity}}</li>
+                    <br>
+                    <hr>
+                {{/each}}
+            </ul>
+            <p style="color: #3a4758; font-size: 1.2em;">Total: {{total}}</p>
+          </div>
+          <div
+            style="background-color: #02975e; height: 4.5rem; text-align: center;"
+          >
+            <div style="padding-top: 24px;">
+              <a
+                href="http://thaonguyenpharmacy.com.au/"
+                style="text-decoration: none; color: #ffffff; font-size: 1.2em;"
+                >thaonguyenpharmacy.com.au</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  

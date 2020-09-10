@@ -32,6 +32,7 @@ def main():
     
     sample_types = cursor.execute("select distinct(sample_type) from samples where dataset_id=1000;")
     sample_types_row = cursor.fetchall() 
+    # print(sample_types_row)
 
     flat_dataset_ids = [i[0] for i in dataset_ids_row]
     
